@@ -1,0 +1,457 @@
+/* Custom styles to overide bootstrap 4.css */
+
+
+ul {
+  list-style-type: none;
+  display:inline-block;
+  padding-left:0px;
+  padding-right:20px;
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  text-align:right;
+}
+
+ul img {
+    height: 75px;
+    position: fixed;
+    top: 1px;
+    left: 3px;
+    padding-top: 0;
+}
+
+li {
+  display:inline-block;
+}
+
+li a {
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2rem;
+}
+}
+/* Link Styling */
+
+li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s
+}
+
+li a:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+li {
+  border-right: 0px solid #000;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+/* Scrollbar */
+html {
+    width:100vw;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+.back-to-top-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+
+  /* emoji don't behave like regular fonts
+     so this helped position it correctly */
+  padding: 0.25rem;
+
+  position: fixed;
+  top: 700px;
+  left: 70px;
+  padding-top: 0;
+
+}
+
+.back-to-top-link:hover {
+  color: black;
+}
+
+@media screen and (max-width: 1400px) {
+  .back-to-top-link {
+    display:none;
+  }
+}
+
+/* Overlay CSS */
+
+.overlay {
+  position:fixed;
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#fff;
+}
+
+#overlay-menu {
+    position:fixed;
+    left:50%;
+    top:40%;
+    text-align: center;
+    width:65%;
+    background: #ffffff00;
+    transform: translate(-50%, -50%);
+}
+
+li a:hover {
+  text-decoration:none;
+}
+
+/* starter template section */
+body {
+  padding-top: 0rem;
+  position: relative;
+  font-size: 1.1rem;
+  min-height: 100vh;
+
+  opacity: 1;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+video {
+  width:40%;
+}
+
+.profile-image {
+  height:250px;
+  border-radius:50%;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 10;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+article.container {
+  padding-top: 100px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  width: 70%;
+    border: 0;
+  border-top: 1px solid #000;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-size: 2.8rem;
+  padding: 1rem;
+  padding-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+p {
+  font-size: 1.25rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+
+.sticky-footer {
+  position: sticky;
+  padding: 1.5rem;
+  padding-top:3rem;
+  top: 100%;
+  left:0;
+  bottom:0;
+  width:100%;
+  text-align:center;
+}
+
+i {
+  padding:3px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #000;
+}
+
+.col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-bottom: 32px;
+}
+
+section.container-fluid.text-center {
+  padding-left:15px;
+}
+
+.video-container iframe, .video-container object, .video-container embed { position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+padding-top:20px;
+padding-bottom:20px;
+}
+
+/* Email Form CSS */
+
+label {
+  font-size: 1.75rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+input {
+  margin:15px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding:5px;
+}
+
+textarea {
+  margin:15px;
+  font-family: 'Raleway', sans-serif;
+  max-width:95%;
+  padding:10px;
+}
+
+button {
+  border: none;
+  background-color: #000;
+  padding: 14px 28px;
+  font-size: 16px;
+  margin:12px;
+  cursor: pointer;
+  display: inline-block;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  border-radius:12px;
+}
+
+/* On mouse-over */
+button:hover {background: #fff; color:#000; border-radius:12px; border: 2px solid black;}
+
+.default {color: black;}
+
+/* Project Image Gallery CSS */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#sociallinks
+
+i {
+  font-size: 5rem;
+  margin:30px;
+}
+
+ i:hover {
+  color:#000;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Small Devices (phones, 320px and up) */
+
+@media (min-width: 320px) {
+  .navbar li {
+    display:none;
+  }
+
+  video {
+    width:80%;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 576px) {
+.col-sm-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding:1;
+  padding-bottom: 35px;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.navbar li {
+  display:none;
+}
+
+video {
+  width:45%;
+}
+
+}
+
+@media (min-width: 768px) {
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.navbar li {
+  display:none;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+p {
+  font-weight: 300;
+}
+
+.navbtn {
+  display:none;
+}
+
+.navbar li {
+  display:inline-block;
+}
+
+video {
+  width:30%;
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+p {
+  padding: 0 80px 0 80px;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+.navbtn {
+  display:none;
+}
+
+.navbar li {
+  display:inline-block;
+}
+
+video {
+  width:30%;
+}
+
+}
