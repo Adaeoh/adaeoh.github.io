@@ -69,7 +69,11 @@ li:last-child {
 
 /* Scrollbar */
 html {
+<<<<<<< HEAD
     -font-size: 16px
+=======
+    font-size:16px;
+>>>>>>> refs/remotes/origin/master
     width:100vw;
     overflow-x:hidden;
     scroll-behavior: smooth;
@@ -223,7 +227,11 @@ h6 {
 }
 
 p {
+<<<<<<< HEAD
   font-size:1rem;
+=======
+  font-size: 1rem;
+>>>>>>> refs/remotes/origin/master
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: #000;
